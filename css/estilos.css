@@ -1,0 +1,120 @@
+/* TUDO O QUE VOCÊ ESCREVERÁ AQUI DENTRO
+É CSS! (REGRAS CSS, com seletores, propriedades e
+valores) */
+
+/* Mudar o Box Model CSS padrão
+PARA TODAS AS TAGS DA PÁGINA */
+* { box-sizing: border-box; }
+
+body { 
+    background: linear-gradient(lightblue, blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Seletor ID/IDentificado */
+#container {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: black 1px 1px 50px;
+}
+
+h1 {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Sintaxe completa: */
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+
+    /* Sintaxe abreviada: */
+    border: solid 10px black;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/* Grupo de seletores */
+figcaption, p, h3  { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 { 
+    background: linear-gradient(to left, blue, rgba(0, 0, 139, 0));
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Seletor Classe */
+.centralizar { text-align: center; }
+
+.borda-arredondada { border-radius: 8px; }
+.sombra-texto { text-shadow: black 2px 2px 5px; }
+.destaque {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border: solid 2px darkred;
+}
+
+
+figure {
+    /* Reset de espaçamentos */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Tornando as imagens flexíveis/responsivas */
+img { max-width: 100%; }
+
+nav { text-align: center; }
+
+/* Regra de estado inicial do link 
+(Seletor descendente) */
+nav a { 
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+    
+    width: 50%;
+    padding: 20px;
+    
+    transition: 0.5s;
+
+    /* Necessário para funcionar
+    o transform */
+    display: inline-block;
+
+}
+
+/* Regra de acionamento do link
+PSEUDO-CLASSE :hover (passar o mouse) */
+nav a:hover {
+    background-color: darkblue;
+    color: lightblue;
+    
+    /* transform: 
+        translateY(-10px)
+        scale(1.2)
+        rotate(5deg); */
+    
+    /* box-shadow: black 0 0 10px; */
+}
